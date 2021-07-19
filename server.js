@@ -1,7 +1,7 @@
 const app = require('./app/app');
-const confi= require('./app/configuracion/confi');
+const confi= require('./app/config');
 const morgan=require('morgan');
-const conexion = require('./app/configuracion/conexion');
+const conexion = require('./app/conexion');
 
 conexion.connect();
 app.use(morgan('dev'))
